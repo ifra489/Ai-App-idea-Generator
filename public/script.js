@@ -15,7 +15,7 @@ async function generateIdea() {
   resultDiv.innerHTML = "";
 
   try {
-    const response = await fetch("/generate", {
+    const response = await fetch("https://ai-app-idea-generator-ai-app-idea-generator.up.railway.app/generate", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
