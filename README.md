@@ -1,6 +1,6 @@
 # 🚀 AI App Idea Generator
 
-An AI-powered web application that generates complete startup/app ideas using AI.
+ An AI-powered web app that instantly generates complete, structured startup ideas  built for developers, founders, and dreamers.
 
 ---
 
