@@ -5,7 +5,7 @@
 ---
 
 ## 🌐 Live Demo
-Coming Soon 🚀
+[Demo](https://ai-app-idea-generator-steel.vercel.app/)
 
 ---
 
