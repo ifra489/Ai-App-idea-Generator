@@ -1,27 +1,38 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  font-family: Arial;
-  background: #4B2E2B;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4B2E2B, #2c1814);
   color: white;
   text-align: center;
-  padding-top: 50px;
+  padding: 20px;
+  margin: 0;
 }
 
+/* MAIN CONTAINER */
 .container {
-  width: 500px;
+  width: 90%;
+  max-width: 800px;
   margin: auto;
-  background: #8C5A3C;
+  background: rgba(140, 90, 60, 0.9);
   padding: 20px;
   border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
+/* INPUT */
 input {
-  width: 80%;
-  padding: 10px;
+  width: 100%;
+  padding: 12px;
   border-radius: 8px;
   border: none;
   margin-bottom: 10px;
+  font-size: 16px;
+  outline: none;
 }
 
+/* BUTTON */
 button {
   padding: 10px 15px;
   border: none;
@@ -30,8 +41,15 @@ button {
   background: #6e3d12;
   color: white;
   margin: 5px;
+  font-size: 15px;
+  transition: 0.3s;
 }
 
+button:hover {
+  background: #8a4b18;
+}
+
+/* LOADER */
 .spinner {
   width: 40px;
   height: 40px;
@@ -50,33 +68,63 @@ button {
   display: none;
 }
 
-.card {
-  background: #D5E7B5;
-  padding: 20px;
-  border-radius: 15px;
-  text-align: left;
-  line-height: 1.6;
-  margin-top: 20px;
-}
-
-.heading {
-  font-size: 18px;
-  font-weight: 800;
-  color: #df6717;
-  margin-top: 12px;
-  margin-bottom: 4px;
-}
-
-.text {
-  font-weight: 400;
-  color: white;
-  margin-bottom: 4px;
-  line-height: 1.5;
-}
-
+/* RESULT CARD */
 .card {
   background: rgba(0,0,0,0.4);
   padding: 20px;
   border-radius: 15px;
   text-align: left;
+  line-height: 1.6;
+  margin-top: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* HEADINGS */
+.heading {
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffb36b;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+/* TEXT */
+.text {
+  font-weight: 400;
+  color: #f1f1f1;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* 🌐 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 14px;
+  
+  }
+
+  button {
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  .card {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+  .heading {
+    font-size: 2px;
+  }
 }
